@@ -8,7 +8,6 @@ interface Todo {
   completed: boolean;
 }
 
-//json 데이터 받아오기
 axios.get(url).then((response) => {
   const todo = response.data as Todo;
   const ID = todo.id;
